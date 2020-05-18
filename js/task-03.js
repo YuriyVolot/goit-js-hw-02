@@ -4,12 +4,14 @@ const findLongestWord = function (string) {
     let longestWord;
 
     for (let i = 0; i < arrString.length; i += 1) {
-        wordLength = arrString[1].length;
+        // wordLength = arrString[1].length;
         if (arrString[i].length > wordLength) {
             longestWord = arrString[i];
-            return longestWord;
+            // return longestWord;
+            wordLength = arrString[i].length;
         }
     }
+    return longestWord;
 };
 
 /*
